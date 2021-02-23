@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&display=swap');
+body{
+  background-image: linear-gradient(180deg, #3a3d40 30%, #181719 70%);
+  font-family: 'Bebas Neue', cursive;
+}
+@media (max-width: 768px){
+  body{
+    font-size: 75%;
+  }
+}
+ol {
+  list-style-type: none;
+}
+ul {
+  list-style-type: none;
+}
+a {
+   text-decoration: none;
+    color: #d32f2f;
+}
+#container {
+  padding: 0;
+  margin: -8.3px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, mainmax(auto, 1fr));
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer" ;
+   position: relative;
+}
+main {
+  grid-area: main;
+  
+}
+#welcome-section{
+  font-family: 'Josefin Sans', sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#welcome-section h1 {
+ margin-top: 50vh;
+ font-size: 250%;
+ font-weight: 700; 
+}
+#welcome-section p {
+  font-size: 150%;
+}
+#welcome-section img {
+  max-width: 20vw;
+  display: block;
+  height: 20vh;
+  border: 1px snow solid;
+  border-radius: 12rem;
+}
+#projects{
+  width: auto;
+  height: auto;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  grid-gap: 30px;
+}
+@media (max-width: 768px) {
+  #projects{
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 0;
+  }
+}
+#projects a{
+  color: blue;
+  font-size: 200%;
+  text-align: center;
+}
+#text-main {
+  font-size: 250%;
+  text-align: center;
+}
+@media (max-width: 768px){
+  #text-main {
+    font-size: 175%;
+    text-align: left;
+  }
+}
+.project-tile{
+  text-align: center;
+}
+.project-tile-images{
+  max-width: 88%;
+  display: block;
+  height: auto;
+  border: 1px black solid;
+  border-radius: 0.7rem;
+  box-shadow: 5px 2px #888888;
+}
+#follow_me{
+  width: auto;
+  height: 900px;
+  position: relative;
+  margin-top: 50vh;
+  margin-left: 30vw;
+}
+#follow_me h2{
+  position: absolute;
+  font-size: 325%;
+}
+#follow_me p{
+  position: absolute;
+  margin-top: 20vh;
+  margin-left: 15vw;
+  font-size: 300%;
+}
+#follow_me p>a{
+  color: blue;
+}
+@media (max-width: 768px){
+  #follow_me {
+    font-size: 100%;
+    text-align: left;
+    margin-top: 50vh;
+    margin-left: 20vw;
+  }
+  #follow_me p{
+  position: absolute;
+  margin-top: 10vh;
+  margin-left: 10vw;
+  font-size: 300%;
+}
+}
+header {
+  grid-area: header;
+}
+#navbar{
+  background-color: #fff;
+  border-bottom-left-radius: 25%;
+  border-bottom-right-radius: 25%;
+  font-size: 2em;
+  position: fixed;
+  width: auto;
+  height: auto;
+  top: 0;
+  padding: 0;
+  margin: 0;
+}
+.navlist {
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.navlist li {
+  margin-right: 30px;
+  border-left: 2px #d32f2f solid;
+  height: 1.2em;
+  top: 0;
+}
+.navlist li:hover {
+  background-color: #333;
+}
+footer {
+  grid-area: footer;
+  background-color: #fff;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 190%;
+}
+footer p {
+  align-self: center;
+}
+.profile {
+  align-self: center;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  height: auto;
+  text-align: right;
+}
+.profile img {
+ width: 7%;
+ height: auto;
+}
